@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Write Answer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2 id="showQuestion"></h2>
+
+  <textarea id="answer" placeholder="Write your answer here..."></textarea>
+
+  <button onclick="analyze()">Analyze with AI</button>
+</div>
+
+<script>
+  document.getElementById("showQuestion").innerText =
+    localStorage.getItem("selectedQuestion");
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

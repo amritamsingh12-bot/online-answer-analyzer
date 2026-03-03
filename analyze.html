@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Analyzing...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+
+<div class="loader-card">
+  <div class="spinner"></div>
+  <h2>AI is analyzing your answer</h2>
+  <p id="status">Checking content...</p>
+</div>
+
+<script>
+let steps = [
+  "Checking content...",
+  "Evaluating structure...",
+  "Analyzing keywords...",
+  "Predicting marks..."
+];
+
+let i = 0;
+setInterval(() => {
+  document.getElementById("status").innerText = steps[i];
+  i++;
+}, 800);
+
+setTimeout(() => {
+  window.location.href = "result.html";
+}, 3500);
+</script>
+
+</body>
+</html>

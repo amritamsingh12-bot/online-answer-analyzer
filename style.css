@@ -1,0 +1,70 @@
+body {
+  background: radial-gradient(circle, #0f2027, #203a43, #000);
+  color: white;
+  font-family: Arial;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card, .loader-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 0 20px #00f2ff55;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #00f2ff, #00ff88);
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #333;
+  border-top: 6px solid #00ffcc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.bar {
+  background: #333;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.fill {
+  height: 10px;
+  background: #00ffcc;
+  border-radius: 10px;
+}
+
+.score {
+  color: #00ffcc;
+}
